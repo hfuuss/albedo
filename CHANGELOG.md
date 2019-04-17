@@ -1,8 +1,7 @@
 # Change Log
 
-All notable changes to the "albedo" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+* 2019.04.17 初始化项目，跑通发布流程 -- 九月
+* 2019.04.17 完成初步功能 -- 九月
 
 ## [Unreleased]
 

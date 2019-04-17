@@ -2,26 +2,44 @@
 	"name": "albedo",
 	"displayName": "albedo",
 	"description": "some beauty pic",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "jiuyue",
+	"icon": "logo.png",
 	"engines": {
 		"vscode": "^1.33.0"
 	},
+	"repository": "https://github.com/hfuuss/albedo.git",
 	"categories": [
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.albedo"
+		"onCommand:jiuyue.albedo"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.albedo",
+				"command": "jiuyue.albedo",
 				"title": "albedo",
-				"category": "albedo"
+				"category": "jiuyue"
 			}
-		]
+		],
+		"configuration": {
+				"type": "object",
+				"title": "雅儿贝德设置项",
+				"properties": {
+						"jiuyue.reminderViewIntervalInMinutes": {
+								"type": "number",
+								"default": 60,
+								"description": "展示提醒页面的时间间隔（分钟）"
+						},
+						"jiuyue.reminderViewImg": {
+							"type": "string",
+							"default": "http://images.hfuusec.cn/albedo.jpg",
+							"description": "展示提醒页面链接"
+					}
+				}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
@@ -39,5 +57,6 @@
 	},
 	"dependencies": {
 		"moment": "^2.24.0"
-	}
+	},
+	"license": "MIT"
 }
